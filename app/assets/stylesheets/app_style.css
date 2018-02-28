@@ -1,0 +1,19 @@
+body, html {
+  height: 100vp;
+  width: 100vp;
+}
+
+.container {
+	padding: 10%;
+  height: 100vp; 
+  width: 100vp;
+	text-align: center;
+}
+
+.container h1 {
+	font-family: 'Acme', sans-serif;
+}
+
+.container p {
+	font-size: 30px;
+}
