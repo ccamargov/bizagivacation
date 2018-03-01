@@ -24,4 +24,13 @@ class User < ActiveRecord::Base
     self.password = Digest::SHA1.hexdigest self.password
   end
 
+  # Check if password is valid
+  def password_is_valid?(password_readable)
+    if self.password == Digest::SHA1.hexdigest(password_readable)
+      return true
+    else
+      return false
+    end
+  end
+
 end
