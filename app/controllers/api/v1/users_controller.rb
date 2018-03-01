@@ -1,8 +1,5 @@
 class Api::V1::UsersController < Api::ApiController
 
-  def login_user
-  end
-
   #POST /user/login_user
   def login_user
     user = User.where("email = ?", params[:email]).first
