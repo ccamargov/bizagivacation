@@ -8,7 +8,7 @@ class CreateRequestVacations < ActiveRecord::Migration
       t.date :begin_date
       t.date :end_date
       t.date :last_vacation_on
-      t.boolean :approved, default: false
+      t.integer :approved, default: 0
 
       t.timestamps null: false
     end
