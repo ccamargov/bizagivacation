@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
     	post "/users/login_user" => "users#login_user"
     	get "/request_vacations/get_all_requests" => "request_vacations#index"
+    	post "/request_vacations/update_request_vacation" => "request_vacations#update_request_vacation"
     end
   end
 
