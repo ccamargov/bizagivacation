@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180228202639) do
+ActiveRecord::Schema.define(version: 20180302153322) do
+
+  create_table "request_vacations", force: :cascade do |t|
+    t.string   "process"
+    t.string   "activity"
+    t.date     "request_date"
+    t.string   "employee"
+    t.date     "begin_date"
+    t.date     "end_date"
+    t.date     "last_vacation_on"
+    t.integer  "approved",         default: 0
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
