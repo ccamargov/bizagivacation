@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180301193352) do
+ActiveRecord::Schema.define(version: 20180302153322) do
 
   create_table "request_vacations", force: :cascade do |t|
     t.string   "process"
@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20180301193352) do
     t.date     "begin_date"
     t.date     "end_date"
     t.date     "last_vacation_on"
-    t.boolean  "approved",         default: false
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
+    t.integer  "approved",         default: 0
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "users", force: :cascade do |t|

@@ -2899,3 +2899,538 @@ Processing by Api::V1::RequestVacationsController#index as JSON
   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
   [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
 Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 186.154.153.66 at 2018-03-01 14:58:07 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 233ms (Views: 224.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app_style.css" for 186.154.153.66 at 2018-03-01 14:58:08 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 14:58:25 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 16:54:42 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 16:58:22 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 16:58:23 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 16:58:33 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 16:58:34 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 17:54:47 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 17:54:47 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:18:16 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:18:16 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:18:20 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:18:21 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.3ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:19:47 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:19:48 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:23:03 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:23:03 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:34:51 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:34:52 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.3ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:37:22 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:37:22 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:37:29 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:37:29 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.3ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:38:28 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:38:28 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:40:59 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:40:59 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 19:41:09 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 19:41:10 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 20:03:59 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 190.85.23.202 at 2018-03-01 20:03:59 -0500
+Cannot render console from 190.85.23.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 20:12:13 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 20:12:13 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 20:13:02 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 20:13:03 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 20:13:04 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-01 20:13:08 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-01 20:13:08 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 186.154.153.66 at 2018-03-02 08:49:16 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 247ms (Views: 234.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app_style.css" for 186.154.153.66 at 2018-03-02 08:49:17 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 08:52:17 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 08:52:18 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 08:52:38 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 08:52:39 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.3ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 08:52:50 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 08:52:50 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.3ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 08:52:54 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 08:52:54 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.2ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 09:02:53 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 09:02:53 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.3ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 10:09:45 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 190.85.23.202 at 2018-03-02 10:10:31 -0500
+Cannot render console from 190.85.23.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 10:10:31 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.1ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 190.85.23.202 at 2018-03-02 10:22:30 -0500
+Cannot render console from 190.85.23.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 10:22:31 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 10:22:31 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 10:22:39 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 10:22:39 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')
+  [1m[36mRequestVacation Load (0.4ms)[0m  [1mSELECT "request_vacations".* FROM "request_vacations"[0m
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeDataTypeForApprovedFromRequestVacation (20180302153322)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "arequest_vacations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "process" varchar, "activity" varchar, "request_date" date, "employee" varchar, "begin_date" date, "end_date" date, "last_vacation_on" date, "approved" boolean DEFAULT 'f', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "request_vacations"
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "arequest_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (1, 'Vacations', 'Approval', '2013-03-01', 'Andres Iniesta', '2013-12-23', '2014-01-03', '2013-01-03', 'f', '2018-03-01 19:47:54.791929', '2018-03-01 19:47:54.791929')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "arequest_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (2, 'Vacations', 'Approval', '2013-01-17', 'Xavi Hernandez', '2013-12-23', '2013-12-24', '2012-06-01', 'f', '2018-03-01 19:47:54.797990', '2018-03-01 19:47:54.797990')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "arequest_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (3, 'Vacations', 'Approval', '2013-03-02', 'Sergio Busquets', '2013-12-23', '2013-12-26', '2012-07-01', 'f', '2018-03-01 19:47:54.805221', '2018-03-01 19:47:54.805221')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "arequest_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (4, 'Vacations', 'Approval', '2013-02-25', 'Carles Puyol', '2013-12-23', '2013-12-27', '2012-08-01', 'f', '2018-03-01 19:47:54.810642', '2018-03-01 19:47:54.810642')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "arequest_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (5, 'Vacations', 'Approval', '2013-02-28', 'Francesc Fabregas', '2013-12-23', '2014-01-02', '2012-09-01', 'f', '2018-03-01 19:47:54.818216', '2018-03-01 19:47:54.818216')[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "request_vacations"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "request_vacations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "process" varchar, "activity" varchar, "request_date" date, "employee" varchar, "begin_date" date, "end_date" date, "last_vacation_on" date, "approved" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "arequest_vacations"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "request_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (1, 'Vacations', 'Approval', '2013-03-01', 'Andres Iniesta', '2013-12-23', '2014-01-03', '2013-01-03', 'f', '2018-03-01 19:47:54.791929', '2018-03-01 19:47:54.791929')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "request_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (2, 'Vacations', 'Approval', '2013-01-17', 'Xavi Hernandez', '2013-12-23', '2013-12-24', '2012-06-01', 'f', '2018-03-01 19:47:54.797990', '2018-03-01 19:47:54.797990')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "request_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (3, 'Vacations', 'Approval', '2013-03-02', 'Sergio Busquets', '2013-12-23', '2013-12-26', '2012-07-01', 'f', '2018-03-01 19:47:54.805221', '2018-03-01 19:47:54.805221')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "request_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (4, 'Vacations', 'Approval', '2013-02-25', 'Carles Puyol', '2013-12-23', '2013-12-27', '2012-08-01', 'f', '2018-03-01 19:47:54.810642', '2018-03-01 19:47:54.810642')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "request_vacations" ("id","process","activity","request_date","employee","begin_date","end_date","last_vacation_on","approved","created_at","updated_at") VALUES (5, 'Vacations', 'Approval', '2013-02-28', 'Francesc Fabregas', '2013-12-23', '2014-01-02', '2012-09-01', 'f', '2018-03-01 19:47:54.818216', '2018-03-01 19:47:54.818216')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "arequest_vacations"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180302153322"]]
+  [1m[35m (8.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started POST "/api/v1/users/login_user.json" for 186.154.153.66 at 2018-03-02 10:58:56 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::UsersController#login_user as JSON
+  Parameters: {"email"=>"employee1@example.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE (email = 'employee1@example.com')  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/request_vacations/get_all_requests.json?api_key=PnaGRXk2IlxnawEaOzwSpQtt" for 186.154.153.66 at 2018-03-02 10:58:56 -0500
+Cannot render console from 186.154.153.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::RequestVacationsController#index as JSON
+  Parameters: {"api_key"=>"PnaGRXk2IlxnawEaOzwSpQtt"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (api_key = 'PnaGRXk2IlxnawEaOzwSpQtt')[0m
+  [1m[35mRequestVacation Load (0.2ms)[0m  SELECT "request_vacations".* FROM "request_vacations"
+Completed 200 OK in 17ms (Views: 1.3ms | ActiveRecord: 0.7ms)
